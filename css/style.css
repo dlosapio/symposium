@@ -1,0 +1,164 @@
+/*Reset*/
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+	font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*Fonts*/
+
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:200,400,600);
+
+
+/*Basic Stuff*/
+
+h1 {
+	line-height: 1.5rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+p, li {
+	font-size: .75rem;
+	line-height: 1.4rem;
+}
+
+
+/* Navigation*/
+
+nav {
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: black;
+	padding: 1.5rem 0;
+}
+
+ul#nav {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+nav ul li {
+	padding: 0 1rem;
+}
+
+nav ul li a {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: .75rem;
+	font-weight: 200;
+	letter-spacing: .1rem;
+	color: #fff;
+	display: block;
+}
+
+/*Hero header*/
+
+#hero {
+  background-image: url("../img/hero-sd.jpg");
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+header {
+	overflow: hidden;
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+
+header h1 {
+	margin: 1.5rem;
+}
+
+.hero-logo {
+	width: 7rem;
+	height: 7rem;
+	margin-top: 1rem;
+}
+
+#symposium-logo {
+	width: 10rem;
+	margin-bottom: 1rem;
+}
+
+/*Bottom button*/
+
+.bottom-button a {
+	display: inline-block;
+	position: fixed;
+	z-index: 1;
+	bottom: 1.5rem;
+	left: 50%;
+	margin-left: -6rem;
+	background-color: rgba(150, 150, 150, .75);
+  text-transform: uppercase;
+  font-size: .7rem;
+  letter-spacing: .2rem;
+	padding: .5rem 2rem;
+	border: 1px solid #a8a8a8;
+	color: #fff;
+}
+
+/*About*/
+
+section {
+	display: flex;
+	justify-content: center;
+}
+
+.left-content {
+	padding: 0 4rem;
+	width: 50%;
+}
+
+.left-content h2 {
+	font-weight: 600;
+	padding: 2.5rem 0 1rem 0;
+}
+
+.right-content {
+	width: 50%;
+}
+
+#schedule {
+	background-color: #f36c38;
+}
+
+/*Schedule*/
+
+#schedule {
+	margin-top: -.25rem;
+}
