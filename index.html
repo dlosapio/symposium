@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<nav>
-			<ul id="nav">
+			<ul class="nav" id="main-nav">
 				<li><a href="#">About</a></li>
 				<li><a href="schedule">Schedule</a></li>
 				<li><a href="speakers">Speakers</a></li>
@@ -18,14 +18,13 @@
 				<li><a href="selfstudies">Self-Studies</a></li>
 				<li><a href="#">FAQ</a></li>
 				<li><a href="pricing">Pricing/Register</a></li>
+				<li class="hamburger"><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
 			</ul>
 		</nav>
 		<div id="hero">
 			<header>
 				<img id="symposium-logo" src="img/Symposium_logo.svg" alt="ABET Symposium logo">
-				<h1>April 12-13 | San Diego, CA</h1>
-				<p>Manchester Grand Hyatt Hotel</p>
-				<p>1 Market Pl San Diego, CA 92101</p>
+				<h1>April 12-13 <br> San Diego, CA</h1>
 				<a href="http://www.abet.org" target="blank"><img class="hero-logo" src="img/ABET_logo.svg" alt="ABET logo"></a>
 			</header>
 		</div>
@@ -41,19 +40,29 @@
 					<img src="img/about.jpg" alt="about">
 				</div>
 			</section>
-			<section id="schedule">
-				<div class="left-content">
+			<section>
+				<div id="schedule">
 					<h2>Sample Event Schedule</h2>
-						<ul class="links">
-							<li><a href="#">Sessions</a></li>
-							<li><a href="#">Pre Symposium Workshops</a></li>
-							<li><a href="#">Post Symposium Workshops</a></li>
-							<li><a href="#">Discussion Dens</a></li>
-						</ul>
+					<div class="full-content">
+						<div class="sched-box" id="sessions">
+							<a href="#">Sessions</a>
+							<p class="sched-desc">Sessions at the Symposium fall into four focus areas. Use these overarching themes to budget your time and hone in on the topics that are most important to you.
+							</p>
+						</div>
+						<div class="sched-box" id="prework">
+							<a href="#">Pre-Symposium Workshops</a>
+							<p class="sched-desc">Arrive early and get a head start with Self-Study Report Development Workshops, Program Assessment Workshops or by participating in our Institutional Representatives Day</p>
+						</div>
+						<div class="sched-box" id="postwork">
+							<a href="#">Post-Symposium Workshops</a>
+							<p class="sched-desc">Sessions at the Symposium fall into four focus areas. Use these overarching themes to budget your time and hone in on the topics that are most important to you.</p>
+						</div>
+						<div class="sched-box" id="discden">
+							<a href="#">Discussion Dens</a>
+							<p class="sched-desc">Inspired by the “Fishbowl” conversation model and intended to foster group participation, our Discussion Dens are much more intimate and dynamic discussions than your standard presentation — no slides, no handouts, just a very compelling story to share.</p>
+						</div>
+					</div>
 				</div>
-				<div class="right-content">
-<!-- 					<img src="#" alt="about">
- -->				</div>
 			</section>
 			<section id="presenters">
 				<!-- insert slider here w/ photos & bios -->
@@ -70,6 +79,7 @@
 					<a href="#">More Info</a>
 				</div>
 				<div class="right-content">
+					<img src="img/hyatt.jpg" alt="Grand Hyatt San Diego">
 				</div>
 			</section>
 			<section id="selfstudy">
@@ -121,8 +131,11 @@
 			</div>
 			</section>
 		</main>
+		<footer>
+			<p>415 North Charles Street, Baltimore, MD 21201 | Phone +1.410.347.7700 | abet.org</p>
+		</footer>
 		<div class="bottom-button">
-			<a href="#">Register Now</a>
+			<a href="http://symposium.abet.org/event-registration/" target="blank">Register Now</a>
 		</div>
 		<script src="js/main.js"></script>
 	</body>

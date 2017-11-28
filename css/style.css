@@ -34,7 +34,7 @@ img {
 /*Basic Stuff*/
 
 h1 {
-	line-height: 1.5rem;
+	line-height: 2.5rem;
 }
 
 a {
@@ -55,16 +55,15 @@ nav {
 	top: 0;
 	width: 100%;
 	background-color: black;
-	padding: 1.5rem 0;
+	padding: .75rem 0;
+	transition: all .25s;
 }
 
-ul#nav {
+ul.nav {
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
 	width: 100%;
-	display: flex;
-	justify-content: center;
 }
 
 nav ul li {
@@ -79,6 +78,15 @@ nav ul li a {
 	letter-spacing: .1rem;
 	color: #fff;
 	display: block;
+}
+
+.hamburger {
+    display: none;
+}
+
+nav ul li a:hover {
+	color: #f36c38;
+	transition: .35s;
 }
 
 /*Hero header*/
@@ -132,6 +140,12 @@ header h1 {
 	color: #fff;
 }
 
+.bottom-button a:hover {
+	color: #f36c38;
+	border-color: #f36c38; 
+	transition: .35s;
+}
+
 /*About*/
 
 section {
@@ -144,7 +158,7 @@ section {
 	width: 50%;
 }
 
-.left-content h2 {
+h2 {
 	font-weight: 600;
 	padding: 2.5rem 0 1rem 0;
 }
@@ -153,12 +167,137 @@ section {
 	width: 50%;
 }
 
-#schedule {
-	background-color: #f36c38;
-}
-
 /*Schedule*/
 
 #schedule {
+	background-color: #b5b5b5;
+	padding: 5rem 0;
 	margin-top: -.25rem;
+	width: 100%;
+}
+
+#schedule h2 {
+	font-size: 1.5em;
+	padding-bottom: 4rem;
+	text-align: center;
+}
+
+p.sched-desc {
+	display: none;
+}
+
+.full-content {
+	display: flex;
+	justify-content: center;
+}
+
+.sched-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20%;
+	height: 5rem;
+	margin: 0 .25rem;
+	background-color: #f36c38;
+}
+
+.sched-box a {
+	display: block;
+	padding: 2rem;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: .75rem;
+	font-weight: 600;
+	letter-spacing: .1rem;
+	color: #fff;
+}
+
+.sched-box:hover {
+	background-color: #6c6361;
+	transition: .25s ease;
+}
+
+.title {
+	display: block;
+	margin: 0 auto;
+}
+
+/*Footer*/
+
+footer {
+	background-color: black;
+	padding: 2.5rem 0 .5rem 0;
+}
+
+footer p {
+	color: white;
+	text-align: center;
+}
+
+@media screen and (max-width: 775px) {
+
+	.hamburger{
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	ul.nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
+  .nav li a {
+  	display: none;
+  }
+
+  .nav li a.icon {
+	  display: block;
+	}
+
+	.nav.responsive {
+		display: flex;
+		justify-content: center;
+		transition: all .25s;
+		}
+
+  .nav.responsive a.icon {
+    position: absolute;
+    right: 1rem;
+    top: .75rem;
+  }
+
+  .nav.responsive a {
+    float: none;
+    display: block;
+	}
+
+}
+
+@media screen and (max-width: 530px) {
+
+	#about {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.left-content, .right-content {
+		width: 100%;
+		padding: 0 .5rem;
+		margin-bottom: .5rem;
+	}
+
+	.sched-box {
+		flex-wrap: wrap;
+		width: 48%;
+	}
+
+	.full-content {
+		height: 100%;
+	}
+
+	#schedule h2 {
+		padding-left: 0;
+	}
+
 }
