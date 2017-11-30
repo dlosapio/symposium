@@ -239,7 +239,7 @@ p.sched-desc {
 }
 
 .sched-box a:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 
@@ -328,12 +328,12 @@ footer p {
 	}
 
 	.sched-box {
-		flex-wrap: wrap;
-		width: 48%;
+		margin-top: .5rem;
+		width: 100%;
 	}
 
 	.full-content {
-		height: 100%;
+		flex-wrap: wrap;
 	}
 
 	#schedule h2 {
